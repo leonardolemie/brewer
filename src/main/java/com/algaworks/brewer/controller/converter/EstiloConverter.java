@@ -16,8 +16,4 @@ public class EstiloConverter implements Converter<String, Estilo>{
 		}
 		return estilo;
 	}
-
-	
-	
-
 }
