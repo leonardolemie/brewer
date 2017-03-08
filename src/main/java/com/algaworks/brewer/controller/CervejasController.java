@@ -14,7 +14,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.algaworks.brewer.model.Cerveja;
 import com.algaworks.brewer.model.Origem;
 import com.algaworks.brewer.model.Sabor;
-import com.algaworks.brewer.repository.Cervejas;
 import com.algaworks.brewer.repository.Estilos;
 import com.algaworks.brewer.service.CadastroCervejaService;
 
@@ -45,7 +44,6 @@ public class CervejasController {
 		
 		cervejaService.salvar(cerveja);
 		
-		// Salvar no banco de dados...
 		attributes.addFlashAttribute("mensagem", "Cerveja salva com sucesso!");
 		return new ModelAndView("redirect:/cervejas/novo");
 	}
